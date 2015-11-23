@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Less</title>
+    <style type="text/css">
+        body,ul,li,h1,h2,h3,p{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        
+        ul li{list-style: none;}
+        a{text-decoration:none;}
+        .container{
+           margin:0px auto;
+        }
+        
+        @media(min-width:1200px){
+            .container{width:1170px;}
+        }
+        @media(min-width:992px){
+            .container{width:970px;}
+        }
+        @media(min-width:768px){
+            .container{width:750px;}
+        }
+        nav{background: #1D365D;}
+        nav h1{
+            color: #fff;
+            background: #1D365D;
+            display: inline-block;
+        }
+        .nav{display: inline-table;}
+        .nav li{float: left;color: #fff; margin-left: 30px;}
+        .nav li a{color: #fff;}
+        .nav li:after{ content: '';display: block;clear:both;}
+        
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="">
+                <h1>{less}</h1>
+                <ul class="nav">
+                    <li class="active"><a href="">语言特性</a></li>
+                    <li><a href="">函数手册</a></li>
+                    <li><a href="">用法</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">关于</a></li>
+                    <li><a href="">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="ambient"></div>
+    <div class="new"></div>
+    <div class="container">
+        <div class="toolbar"></div>
+        <div class="content"></div>
+    </div>
+</body>
+</html>

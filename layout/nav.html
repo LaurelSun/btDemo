@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buttom nav</title>
+    <style type="text/css">
+        *{margin: 0px;padding: 0px;}
+        
+        ul{    width: 100%;
+    position: fixed;
+    bottom: 0px;}
+        li{width: 33.33%;height: 50px; border:1px solid #f90; list-style: none;     box-sizing: border-box; float: left;}
+        li:after{clear: both; content: '';display: block;}
+        .circle{
+           
+            min-height: 15%;
+            min-width: 15%;
+            max-height: 30%;
+            max-width: 30%;
+            border-radius: 100%;
+            position: fixed;
+            bottom: 0px;
+            border:1px solid #f90;
+            z-index: 1000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div class="circle">a</div>     
+            </li>
+            <li><span>nav2</span></li>
+            <li><span>nav3</span></li>
+        </ul>
+        
+        
+    </nav>
+</body>
+</html>

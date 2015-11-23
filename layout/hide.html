@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toolbar</title>
+    <style type="text/css">
+        *{marigin:0px; padding: 0px;}
+        ul li{list-style: none;  display: inline-block;}
+        nav{background-color:#009933;  cursor: pointer}
+        .header{ height: 50px; }
+        .header div{padding-left: 30px; color: #fff; display: inline-block;}
+        .header .nav-bar{ display: inline-block; padding-left:50px;}
+        .toolbar{display: none;}
+        .form-control{
+            width: 100%;
+            border:1px solid #ccc;
+            border-radius: 4px;
+            padding:6px 12px;
+            box-sizing: border-box;
+             margin:5px 0px;;
+        }
+        .active{display: block;}
+        
+        .container{background: #ccc; height: 300px;}
+    </style>
+    <script type="text/javascript" src="../js/jquery.min.js"> </script>
+    <script type="text/javascript"> 
+        $(function(){
+            var toolbar=$('.toolbar');
+            
+            $('nav').click(function(ev){
+                ev.stopPropagation()
+            })
+            $('#brand').click(function(){
+                toolbar.toggle();
+            })
+            
+            $(document).click(function(){
+                toolbar.hide();
+            })
+            
+        $('body').on('dblclick','.container',function(){
+            alert(123);
+        })
+        
+        $('#btn').click(function(){
+            var s='<div class="container">new</div>';
+            $(s).appendTo($('#aaa'))
+        })
+        })
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="header">
+            <div id="brand">Brand</div>
+            <ul class="nav-bar">
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </div>
+        <div class="toolbar">
+            <input type="text" class="form-control">
+        </div>
+    </nav>
+    
+    <div class="container">
+        content
+    </div>
+    
+    <div id='aaa'></div>
+    <button id="btn">1111</button>
+</body>
+</html>

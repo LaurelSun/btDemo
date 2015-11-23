@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        ul li{list-style: none;}
+        li ul{padding-left:10px;}
+        
+ 
+  
+        
+    </style>
+    <script type="text/javascript" src='../js/jquery.min.js'></script>
+    
+    <script type="text/javascript">
+        $(function(){
+           var root=$('.root');
+            
+        $('li,span',root).mouseover(function(){
+            var _this=$(this);
+            _this.css('background-color',"red"); 
+//            var child=$('ul',_this);
+//            var parentTitle=$('span',_this);
+//            if(child.length>0&&parentTitle.length>0){
+//               $(parentTitle[0]).css('background-color',"red");
+//            }
+//            else{
+//                _this.css('background-color',"red");
+//            }
+        })
+        
+          $('li,span',root).mouseout(function(){
+            var _this=$(this);
+             _this.css('background-color',"white"); 
+             
+            
+        })
+        });
+    </script>
+</head>
+<body>
+    
+    <ul class="root">
+        <li>11111111111</li>
+        <li>
+           <span>parent</span>
+            <ul>
+                <li>22222222222</li>
+                <li>2222222222</li>
+                <li>
+                    <span>parent222222222</span>
+                    <ul>
+                        <li>333333333333</li>
+                        <li>333333333333</li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            
+        </li>
+        <li>33333333333333333</li>
+    </ul>
+</body>
+</html>

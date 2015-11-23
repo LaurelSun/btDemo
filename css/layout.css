@@ -1,0 +1,29 @@
+body{padding-top: 50px;}
+.template{
+ text-align: center;
+    padding-top: 40px;
+}
+
+#txtPwd{
+    width:100%
+}
+.img{
+    background: #ccc;
+    padding:5px 10px;
+    
+}
+.img img{
+    width: 140px;
+    height: 110px;
+}
+.bg-info{
+    padding: 10px 15px;
+}
+
+.container .area{
+    margin:20px 0px ;
+}
+.input-group,.nav{
+    margin-top: 5px;
+}
+ 

@@ -1,0 +1,124 @@
+body{
+ font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+ul li{list-style: none;}
+.container{ padding-left:0px; 
+    padding-right: 0px;}
+.navbar-default .container{
+    border-bottom:8px solid  #00B3EC;
+}
+ul{padding-left:0px;}
+ 
+.navbar{
+    margin-bottom: 10px;
+}
+
+.navbar-default{
+    background:none;
+    border:0px;
+}
+
+.navbar-default .navbar-nav>li.active>a{
+    background: #00B3EC;
+    border-radius: 5px 5px 0px 0px;
+    color:#fff;
+}
+.navbar-nav li{vertical-align: bottom;
+}
+@media (min-width: 768px)  {.navbar-nav>li{
+        float:none;
+    }}
+.container .img_head{margin-bottom: 13px; position: relative;}
+.container .point{position: absolute; right: 0px; bottom: 0px;}
+.container .point div.active{
+    background: #00B3EC;
+}
+.container .point div{
+    display: inline-block; background:#ffc516;
+    width: 20px; height: 5px;
+}
+.container .img_head img{width:100%}
+.row{margin-bottom: 10px;}
+.row .item{
+    border:1px solid #ccc;
+    border-radius: 1px;
+    position: relative;
+}
+.item .intro p{
+    padding:  5px;
+    line-height: 27px;
+}
+.item div:nth-of-type(2){
+    padding: 5px 10px;
+}
+.intro ul{padding-left: 0px;}
+.intro .btn-default{
+    background: #ffc516;
+    color:#fff;
+    border:0px;
+    margin-top: 7px;
+}
+.item .more{
+    position: absolute;
+    right: 5px;
+    top:5px;
+    color: #00B3EC;
+}
+.item .head{
+    background: #0099CC;
+    line-height: 30px;
+    padding: 5px 10px;
+    width: 80px;
+}
+.item .head a{
+    font-weight: 800;
+    color: #fff;
+    font-size:14px;
+}
+.item .stu_list li,.item .teacher_list li{
+    display: inline-block;
+}
+.item .stu_list{
+    padding-left:0px;
+}
+.item .stu_list .thumbnail{
+    margin-bottom: 0px;
+}
+.item .stu_list .stu_name{
+    text-align: center;
+}
+.item .teacher_list li {
+    margin-left: 7px;
+    
+}
+.footer  {
+    background:#282828;
+}
+.footer .container{
+    position: relative;
+}
+.footer li{
+    color:#bfbfbf;
+    padding:5px 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer li.active{
+    color: #ffc516;
+}
+.footer .conact{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    text-align: right;
+    color: #bfbfbf;
+    font-weight: 700;
+    font-size: 14px;
+}
+.copyright{
+    background:#0099CC;
+}
+.copyright p{
+    color:#fff;
+    text-align: right;
+}
