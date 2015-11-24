@@ -10,11 +10,16 @@
     display: block;
     box-sizing: border-box;
 }
+
+.categories h5{
+    margin: 0px;
+}
 .categories li.active a{
     border-right: 5px solid #0099CC;
     color: #0099CC;
     
 }
+
 .bread{margin-bottom: 5px;}
 .news li{
     padding-top:10px;
@@ -30,10 +35,55 @@
   
     padding: 10px 15px;
 }
+  .input-group .btn{
+    border:inhiret;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
 .btn-readmore{
    
     color:  #337ab7;
     font-weight: 600;
     
 }
+
+.details .img_list{
+    position: relative;
+}
+
+.details .img_list .point{
+    position: absolute;
+    bottom: 0px;
+    right:25px;
+}
+.details .img_list .point span{
+display: inline-block;
+margin-left: 3px;
+background: #ffc516;
+    width:15px;
+    height: 5px;
+}
  
+
+.content{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-group, .btn-group-vertical{
+    overflow: hidden;
+    display:inherit
+}
+
+.menu-bar{width:100%;
+ 
+}
+
+.menu-bar button{
+    width:50%;
+    color:#8c858c;
+}
+.menu-bar button .glyphicon:nth-child-type(2){
+    margin-left: 15px;
+}
