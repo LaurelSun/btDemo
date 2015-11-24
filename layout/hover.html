@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title>index</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        
+        li{list-style: none; float: left; margin-left: 5px;}
+
+        li:after{content: '';display: block;clear: both;}
+        .item{width: 200px; height: 200px;overflow: hidden; position: relative;}
+        
+        .item:hover{overflow: visible;}
+        .item:hover .content{ opacity: 1;}
+       
+        .item .hotarea{z-index: 2;width: 100%;height: 100%; position: absolute;left:0px; top: 0px;}
+        .item .preview{width: 100%; }
+        .item .content{width:200%;height: 200%; position: absolute;top:0px; left: 0px; opacity: 0; z-index: 1;  }
+        .item .left{left:-100%; }
+        .item .bottom{top:-100%}
+        
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>
+                        <div class="item">
+                             <img src="../img/1.png" alt="" class="preview">
+                             <div class="hotarea"></div>
+                             <div class="content">
+                                 <img src="../img/1.png" alt="">
+                                
+                             </div>
+                              
+                        </div>
+                    </li>
+                    
+                     <li>
+                        <div class="item">
+                             <div class="hotarea"></div>
+                             <img src="../img/2.png" alt="" class="preview">
+                             <div class="content left">
+                                 <img src="../img/2.png" alt="">
+                                
+                             </div>
+                              
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                             <div class="hotarea"></div>
+                             <img src="../img/3.png" alt="" class="preview">
+                             <div class="content bottom">
+                                 <img src="../img/3.png" alt="">
+                                
+                             </div>
+                             
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                             <div class="hotarea"></div>
+                             <img src="../img/4.png" alt="" class="preview">
+                             <div class="content left bottom">
+                                 <img src="../img/4.png" alt="">
+                                
+                             </div>
+                             
+                        </div>
+                    </li>
+                </ul>
+                 
+                  
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
