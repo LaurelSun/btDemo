@@ -1,0 +1,39 @@
+.categories li{
+  background:#F5F5F4;
+
+}
+.categories li a{
+    text-decoration: none;
+    color: #7F7F7F;
+    font-weight: 600;
+    padding: 9px 10px;
+    display: block;
+    box-sizing: border-box;
+}
+.categories li.active a{
+    border-right: 5px solid #0099CC;
+    color: #0099CC;
+    
+}
+.bread{margin-bottom: 5px;}
+.news li{
+    padding-top:10px;
+     padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.news h3{
+    margin-top: 10px;
+}
+.btn{
+     border-radius: 0px;
+    border: 1px solid #eee;
+  
+    padding: 10px 15px;
+}
+.btn-readmore{
+   
+    color:  #337ab7;
+    font-weight: 600;
+    
+}
+ 
